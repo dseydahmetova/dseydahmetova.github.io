@@ -16,7 +16,8 @@
   body{
 	font-family: 'Georgia', sans-serif;
 	line-height: 1.5;
-    color: #130512;
+	color: #130512;
+	margin: 0;
   }
   
   ul{
@@ -204,7 +205,7 @@ h2{
   	height: 600px;
   	background: linear-gradient(#2b86ee, transparent 20%),
 				linear-gradient(0deg, #fff, transparent),
-			   #abbdf0 url('../sample/images/top.jpg') no-repeat center;
+			   #abbdf0 url('../images/top.jpg') no-repeat center;
   	background-size: cover;
 	margin-bottom: 40px;
   }

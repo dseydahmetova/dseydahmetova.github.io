@@ -7,16 +7,16 @@
   }
   
   header {
-	margin: 0;
 	background-color: #176655e1;;
-	position: fixed;
-	width: 100%;
+  position: fixed;
+  width: 100%;
   }
   
   body{
 	font-family: 'Georgia', sans-serif;
 	line-height: 1.5;
     color: #130512;
+    margin: 0;
   }
   
 ul{
@@ -35,7 +35,7 @@ list-style: none;
   
   li{
 	width: auto;
-	margin: 3px;
+  margin: auto 0;
   }
   
   h3{
@@ -182,8 +182,8 @@ h2{
     text-align: center;
     margin: 60px;
     padding: 0;
-    /* height: 450px; align all the items on the cross axis
-    align-items: stretch; */
+    /* height: 450px; align all the items on the cross axis*/
+    align-items: stretch; 
     justify-content: space-around;
   }
   
@@ -192,13 +192,21 @@ h2{
 	text-align: justify;
   }
 
+  .main-title{
+    margin: 0 auto;
+    width: 80%;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  
   .col{
     padding: 10px;
     /* this sets same size of items for the first element and a 200px
     min-width to display another column.. this is talking as a flex item */
     flex: 1 200px;
     /* this makes all the height margins similars.. */
-    margin-top: 0;
+    margin: 0;
     margin-bottom: auto;
   }
 
@@ -218,7 +226,7 @@ h2{
   	height: 600px;
   	background: linear-gradient(#2b86ee, transparent 20%),
 				linear-gradient(0deg, #fff, transparent),
-			   #abbdf0 url('../sample/images/top.jpg') no-repeat center;
+			   #abbdf0 url('../images/top.jpg') no-repeat center;
   	background-size: cover;
 	margin-bottom: 40px;
   }
@@ -250,8 +258,8 @@ h2{
     position: fixed;
     display: flex;
     flex-direction: column;
-    bottom: 20%;
-    right: 1em;
+    bottom: 5%;
+    right: 0.5em;
 }
   
   
@@ -262,7 +270,7 @@ h2{
   @media (min-width : 702px) and (max-width:1600px) {
   
   .container{
-	width: 80%;
+	width: 85%;
   }
   
   .nav {
@@ -300,8 +308,14 @@ h2{
         flex-direction: row;
         text-align: center;
       }
+
   .contact {
-    bottom: 20%;
-    right: 2.5em;
+    margin-bottom: 20%;
+    right: 1.5em;
   }
+  .cover-page{
+	  padding-top: 197px;
+	  margin-bottom: 220px;
+	}
+	  
 }
